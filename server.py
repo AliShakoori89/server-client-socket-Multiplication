@@ -32,16 +32,5 @@ num1 = list(map(int, data1.split()))
 num2 = list(map(int, data2.split()))
 
 data3 = num1[0]*num2[0]
-print ('data3 "%s"' % data3)
-
-# if data1 is None or data2 is None:
-#     print ('no data from', client)
-#     # connection.sendall(data1)
-#     # connection.sendall(data2)
-# else:
-    
-#     print ('data3 "%s"' % data3)
- 
- 
-# Close the connection
+print (data3)
 connection.close()

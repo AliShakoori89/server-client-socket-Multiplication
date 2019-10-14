@@ -19,12 +19,19 @@ stream_socket.connect(server_address)
  
  
 # Send data
+
 message1 = input("number 1 : ")
 message2 = input('number 2 : ')
-#s.send(message.encode())
-stream_socket.sendall(message1.encode())
-stream_socket.sendall(message2.encode())
- 
-# response
-data = stream_socket.recv(10)
-print (data)
+
+if message1 and message2:
+    stream_socket.sendall(message1.encode())
+    stream_socket.sendall(message2.encode())
+    # data = stream_socket.recv(10)
+    # print (data)
+else:
+    print('asdsdadad')
+    stream_socket.close()
+    
+
+    # response
+    
