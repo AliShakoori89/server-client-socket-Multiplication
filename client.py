@@ -26,7 +26,7 @@ if message1 and message2:
     # data = stream_socket.recv(10)
     # print (data)
 else:
-    print('asdsdadad')
+    print('input is null')
     stream_socket.close()
     
     
