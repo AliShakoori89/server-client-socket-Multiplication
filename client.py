@@ -12,11 +12,8 @@ port = 12345
  
 # Connect the socket to the port where the server is listening
 server_address = ((host, port))
- 
 print ("connecting")
- 
 stream_socket.connect(server_address)
- 
  
 # Send data
 
@@ -32,6 +29,4 @@ else:
     print('asdsdadad')
     stream_socket.close()
     
-
-    # response
     
